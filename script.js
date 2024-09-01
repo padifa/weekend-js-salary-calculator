@@ -24,7 +24,10 @@ function submitValue(event) {
       alert("All fields are required.");
       return;
   }
-    ist.add('tdata');
+    AddEmployee(firstName, lastName, id, salary, title);
+    const tbody = document.getElementById("tbody-id");
+    const tdata = document.createElement('tr');
+    tdata.classList.add('tdata');
     tbody.appendChild(tdata);
     
     tdata.innerHTML = 
