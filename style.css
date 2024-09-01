@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #beb317;
+    background-color: #17be9a;
     font-family: 'Times New Roman', Times, serif;
     color: #181717;
     font-size: 1.25em;
@@ -13,12 +13,13 @@ body {
 
   header {
     height: 8em;
-    background-color: #5e9940;
+    background-color: #1169f6;
     text-align: center;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
   }
 
   main {
@@ -29,19 +30,17 @@ body {
 
   footer {
     height: 8em;
-    background-color: #a24c4c;
-    text-align: center;
+    background-color: #4c7ea2;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
   }
   
   h1 {
     font-size: 2.5em;
   }
-  
-  
 
   input {
     padding: .5em;
@@ -49,10 +48,11 @@ body {
     background: #FCFCFC;
     border: 1px solid;
   }
-  
+
   button {
     padding: .5em;
     width: 75px;
+    background-color: rgb(173, 220, 20);
   }
   
   table {
@@ -61,6 +61,7 @@ body {
     border: 1px solid black;
     border-collapse: collapse;
     height: 2.15em;
+    border-radius: 5px;
   }
 
   th{
