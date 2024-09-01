@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   header {
     height: 8em;
     background-color: #5e9940;
@@ -19,11 +20,13 @@ body {
     justify-content: center;
     align-items: center;
   }
+
   main {
     flex: auto;
     max-width: 80%;
     margin: auto;
   }
+
   footer {
     height: 8em;
     background-color: #a24c4c;
@@ -46,6 +49,7 @@ body {
     background: #FCFCFC;
     border: 1px solid;
   }
+  
   button {
     padding: .5em;
     width: 75px;
@@ -58,7 +62,7 @@ body {
     border-collapse: collapse;
     height: 2.15em;
   }
-  
+
   th{
     padding: .5em;
     min-width: 3.5em;
@@ -66,6 +70,7 @@ body {
     border-collapse: collapse;
     height: 2.15em;
   }
+
   td {
     padding: .5em;
     min-width: 3.5em;
@@ -73,13 +78,16 @@ body {
     border-collapse: collapse;
     height: 2.15em;
   }
+
   thead {
     background: #a9a8a8;
     color: #ffffff;
   }
+
   tbody tr:nth-child(odd){ 
     background: #fcfcfc;
   }
+
   tbody tr:nth-child(even){
     background: #4b4a4a;
   }
