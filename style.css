@@ -1,109 +1,105 @@
-
-
 body {
-    background-color: #17be9a;
-    font-family: 'Times New Roman', Times, serif;
-    color: #181717;
-    font-size: 1.25em;
-    min-height: 100vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: #17be9a;
+  font-family: "Times New Roman", Times, serif;
+  color: #181717;
+  font-size: 1.25em;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
 
-  header {
-    height: 8em;
-    background-color: #1169f6;
-    text-align: center;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    margin-right: 50px;
-    margin-left: 50px;
-    border-radius: 50px;
-    
-  }
+header {
+  height: 8em;
+  background-color: #1169f6;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 50px;
+}
 
-  main {
-    flex: auto;
-    max-width: 80%;
-    margin: auto;
-    border-radius: 5px;
-  }
+main {
+  flex: auto;
+  max-width: 80%;
+  margin: auto;
+  border-radius: 5px;
+}
 
-  footer {
-    height: 8em;
-    background-color: #4c7ea2;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    margin-right: 50px;
-    margin-left: 50px;
-    border-radius: 50px;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-  }
+footer {
+  height: 8em;
+  background-color: #4c7ea2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 50px;
+}
 
-  input {
-    padding: .5em;
-    width: 150px;
-    background: #FCFCFC;
-    border: 1px solid;
-   border-radius: 10px;
-  }
+h1 {
+  font-size: 2.5em;
+}
 
-  button {
-    padding: .5em;
-    width: 75px;
-    background-color: rgb(173, 220, 20);
-    border-radius: 10px;
-  }
-  
-  table {
-    width: 100%;
-    text-align: left;
-    border: 1px solid black;
-    border-collapse: collapse;
-    height: 2.15em;
-    border-radius: 10px;
-  }
+input {
+  padding: 0.5em;
+  width: 150px;
+  background: #fcfcfc;
+  border: 1px solid;
+  border-radius: 10px;
+}
 
-  th{
-    padding: .5em;
-    min-width: 3.5em;
-    border: 1px solid black;
-    border-collapse: collapse;
-    height: 2.15em;
-  }
+button {
+  padding: 0.5em;
+  width: 75px;
+  background-color: rgb(173, 220, 20);
+  border-radius: 10px;
+}
 
-  td {
-    padding: .5em;
-    min-width: 3.5em;
-    border: 1px solid black;
-    border-collapse: collapse;
-    height: 2.15em;
-   
-  }
+table {
+  width: 100%;
+  text-align: left;
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 2.15em;
+  border-radius: 10px;
+}
 
-  thead {
-    background: #a9a8a8;
-    color: #ffffff;
-  }
+th {
+  padding: 0.5em;
+  min-width: 3.5em;
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 2.15em;
+}
 
-  tbody tr:nth-child(odd){ 
-    background: #fcfcfc;
-  }
+td {
+  padding: 0.5em;
+  min-width: 3.5em;
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 2.15em;
+}
 
-  tbody tr:nth-child(even){
-    background: #4b4a4a;
-  }
-  
-  div{
-    float: right;
-  }
+thead {
+  background: #a9a8a8;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+  background: #fcfcfc;
+}
+
+tbody tr:nth-child(even) {
+  background: #4b4a4a;
+}
+
+div {
+  float: right;
+}
