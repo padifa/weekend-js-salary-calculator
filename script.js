@@ -22,12 +22,8 @@ function onSubmit(event) {
   const title = document.getElementById("title").value;
   const salary = parseFloat(document.getElementById("salary").value);
 
-  if (!firstName || !lastName || !id || !title || isNaN(salary)) {
-    
-    alert("All fields are required.");
-    return;
-  }
   AddEmployee(firstName, lastName, id, salary, title);
+
   const tbody = document.getElementById("tbody-id");
   const tdata = document.createElement("tr");
   tdata.classList.add("tdata");
@@ -43,7 +39,15 @@ function onSubmit(event) {
         })}</td>
         <td><button onClick="removeRow(event)">Delete</button></td>`;
 
+       
+
   updateTotalMonthly();
+
+  document.getElementById("firstName").value = '';
+  document.getElementById("lastName").value = '';
+  document.getElementById("id").value = '';
+  document.getElementById("title").value = '';
+  document.getElementById("salary").value = '';
 }
 
 function AddEmployee(firstName, lastName, id, salary, title) {
@@ -53,6 +57,8 @@ function AddEmployee(firstName, lastName, id, salary, title) {
     id,
     salary,
     title,
+
+    
   };
   employees.push(newEmployee);
 }
@@ -63,9 +69,16 @@ function removeRow(event) {
   const index = employees.findIndex((emp) => emp.id === id);
   if (index !== -1) {
     employees.splice(index, 1);
+
+
   }
   row.remove();
   
+  firstName.value = '';
+  lastName.value = '';
+  id.value = '';
+  title.value = '';
+  salary.value = '';
   updateTotalMonthly();
 }
 
