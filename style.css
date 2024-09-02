@@ -64,18 +64,18 @@ button {
 
 table {
   width: 100%;
-  text-align: left;
-  border: 1px solid black;
-  border-collapse: collapse;
+  text-align: center;
+  border: 5px solid black;
+  border-collapse: separate;
   height: 2.15em;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 th {
   padding: 0.5em;
   min-width: 3.5em;
   border: 1px solid black;
-  border-collapse: collapse;
+  border-collapse: separate;
   height: 2.15em;
 }
 
@@ -83,7 +83,7 @@ td {
   padding: 0.5em;
   min-width: 3.5em;
   border: 1px solid black;
-  border-collapse: collapse;
+  border-collapse: separate;
   height: 2.15em;
 }
 

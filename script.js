@@ -1,16 +1,19 @@
+
 document.addEventListener("DOMContentLoaded", onReady, false);
+
 
 function onReady() {
   console.log("DOM is here!");
-
-  document.querySelector("form").addEventListener("submit", submitValue);
+ 
+  document.querySelector("form").addEventListener("submit", onSubmit);
+  
 }
 
 const employees = [];
 let totalMonthly = 0;
 let totalAnnually = 0;
 
-function submitValue(event) {
+function onSubmit(event) {
   event.preventDefault();
 
   const firstName = document.getElementById("firstName").value;
@@ -61,6 +64,7 @@ function removeRow(event) {
     employees.splice(index, 1);
   }
   row.remove();
+  
   updateTotalMonthly();
 }
 
