@@ -1,12 +1,9 @@
-
 document.addEventListener("DOMContentLoaded", onReady, false);
-
 
 function onReady() {
   console.log("DOM is here!");
- 
+
   document.querySelector("form").addEventListener("submit", onSubmit);
-  
 }
 
 const employees = [];
@@ -21,8 +18,6 @@ function onSubmit(event) {
   const id = document.getElementById("id").value;
   const title = document.getElementById("title").value;
   const salary = parseFloat(document.getElementById("salary").value);
-
-  AddEmployee(firstName, lastName, id, salary, title);
 
   const tbody = document.getElementById("tbody-id");
   const tdata = document.createElement("tr");
@@ -39,15 +34,13 @@ function onSubmit(event) {
         })}</td>
         <td><button onClick="removeRow(event)">Delete</button></td>`;
 
-       
-
   updateTotalMonthly();
 
-  document.getElementById("firstName").value = '';
-  document.getElementById("lastName").value = '';
-  document.getElementById("id").value = '';
-  document.getElementById("title").value = '';
-  document.getElementById("salary").value = '';
+  document.getElementById("firstName").value = "";
+  document.getElementById("lastName").value = "";
+  document.getElementById("id").value = "";
+  document.getElementById("title").value = "";
+  document.getElementById("salary").value = "";
 }
 
 function AddEmployee(firstName, lastName, id, salary, title) {
@@ -57,8 +50,6 @@ function AddEmployee(firstName, lastName, id, salary, title) {
     id,
     salary,
     title,
-
-    
   };
   employees.push(newEmployee);
 }
@@ -69,16 +60,9 @@ function removeRow(event) {
   const index = employees.findIndex((emp) => emp.id === id);
   if (index !== -1) {
     employees.splice(index, 1);
-
-
   }
   row.remove();
-  
-  firstName.value = '';
-  lastName.value = '';
-  id.value = '';
-  title.value = '';
-  salary.value = '';
+
   updateTotalMonthly();
 }
 
