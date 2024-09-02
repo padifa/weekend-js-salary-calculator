@@ -23,6 +23,7 @@ function onSubmit(event) {
   const salary = parseFloat(document.getElementById("salary").value);
 
   if (!firstName || !lastName || !id || !title || isNaN(salary)) {
+    
     alert("All fields are required.");
     return;
   }

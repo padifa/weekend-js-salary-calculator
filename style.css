@@ -98,6 +98,7 @@ tbody tr:nth-child(odd) {
 
 tbody tr:nth-child(even) {
   background: #4b4a4a;
+  color: #ffffff;
 }
 
 div {
