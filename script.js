@@ -33,10 +33,7 @@ function onSubmit(event) {
         <td>${lastName}</td>
         <td>${id}</td>
         <td>${title}</td>
-        <td>${salary.toLocaleString("en-US", {
-          style: "currency",
-          currency: "USD",
-        })}</td>
+        <td>$${salary}</td>
         <td><button onClick="removeRow(event)">Delete</button></td>`;
 
        
