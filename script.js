@@ -1,12 +1,9 @@
-
 document.addEventListener("DOMContentLoaded", onReady, false);
-
 
 function onReady() {
   console.log("DOM is here!");
- 
+
   document.querySelector("form").addEventListener("submit", onSubmit);
-  
 }
 
 const employees = [];
@@ -36,15 +33,13 @@ function onSubmit(event) {
         <td>$${salary}</td>
         <td><button onClick="removeRow(event)">Delete</button></td>`;
 
-       
-
   updateTotalMonthly();
 
-  document.getElementById("firstName").value = '';
-  document.getElementById("lastName").value = '';
-  document.getElementById("id").value = '';
-  document.getElementById("title").value = '';
-  document.getElementById("salary").value = '';
+  document.getElementById("firstName").value = "";
+  document.getElementById("lastName").value = "";
+  document.getElementById("id").value = "";
+  document.getElementById("title").value = "";
+  document.getElementById("salary").value = "";
 }
 
 function AddEmployee(firstName, lastName, id, salary, title) {
@@ -54,23 +49,15 @@ function AddEmployee(firstName, lastName, id, salary, title) {
     id,
     salary,
     title,
-
-    
   };
   employees.push(newEmployee);
 }
 
 function removeRow(event) {
   const row = event.target.closest(".tdata");
-  const id = row.children[2].textContent;
-  const index = employees.findIndex((emp) => emp.id === id);
-  if (index !== -1) {
-    employees.splice(index, 1);
-
-
-  }
-  row.remove();
   
+  row.remove();
+
   updateTotalMonthly();
 }
 
@@ -78,11 +65,11 @@ function updateTotalMonthly() {
   let totalAnnually = employees.reduce((sum, emp) => sum + emp.salary, 0);
   let totalMonthly = totalAnnually / 12;
 
-  document.getElementById("tMonthly").innerText = totalMonthly.toLocaleString(
+  document.getElementById("tMonthly").innerText= totalMonthly.toLocaleString(
     "en-US",
     {
       style: "currency",
       currency: "USD",
     }
-  );
+  ); 
 }
